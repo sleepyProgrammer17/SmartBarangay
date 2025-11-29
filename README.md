@@ -100,28 +100,49 @@ http://127.0.0.1:8000/
 
 ---
 
-# 🌐 GitHub Pages Deployment
+# 🌐 How to Enable GitHub Pages (Publishing Your Site)
 
-This template includes a **single GitHub Action workflow** that handles:
-
-- **Validation** (MkDocs strict build) on every PR → main  
-- **Deployment** to GitHub Pages on merge → main  
+This project is designed to be published online using **GitHub Pages** and **MkDocs**.
 
 ---
 
-## ✅ One-Time Setup on GitHub Pages
+## ✅ 1. Push your repository to GitHub
 
-After your first merge to main:
+If you haven’t yet:
+
+```bash
+git add .
+git commit -m "Initial commit"
+git push
+```
+
+---
+
+## ✅ 2. Automatic Deployment (Recommended)
+
+This template includes a **GitHub Actions workflow** that automatically deploys your MkDocs site **whenever a Pull Request is merged into the `main` branch**.
+
+The workflow will:
+
+1. Build your MkDocs site  
+2. Push the output to the `gh-pages` branch  
+3. Update your GitHub Pages website  
+
+---
+
+## ✅ 3. One-Time Setup on GitHub Pages
+
+After the first deployment:
 
 1. Go to **Settings**
-2. Select **Pages**
-3. Under *Build & Deployment*:
-   - **Source:** Deploy from a branch
-   - **Branch:** `gh-pages`
+2. Click **Pages**
+3. Under *Build and Deployment*:
+   - **Source:** Deploy from a branch  
+   - **Branch:** `gh-pages`  
    - **Folder:** `/ (root)`
-4. Save
+4. Click **Save**
 
-Your thesis will be published at:
+Your live research website will be available at:
 
 ```
 https://<username>.github.io/<repository-name>/
@@ -130,7 +151,7 @@ https://<username>.github.io/<repository-name>/
 Example:
 
 ```
-https://kinev10.github.io/thesis-markdown-template/
+https://kinev10.github.io/research-imrad-template/
 ```
 
 ---
